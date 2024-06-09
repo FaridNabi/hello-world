@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Std-reg-form</title>
+</head>
+<style>
+body{
+    background-color: turquoise;
+    border: 1px solid black;
+    border-color:;
+    padding: 8px;
+    width: 50%;
+   
+}
+h1{
+    text-align: center;
+}
+::placeholder{
+    font-style: italic;
+}
+label, input{
+    text-align: left;
+}
+fieldset{
+    border-color: antiquewhite;
+    width: 88%;
+}
+.registerbtn{
+    background-color: #04AA6D;
+    color: white;
+    width: 92.5%;
+}
+</style>
+<body>
+    <form action="/action_page.php">
+        <h1 style="text-align: center; font-family:  Arial, sans-serif; text">Tələbə Qeydiyyat Forumu</h1> <hr>
+        
+        <label for="fname">Ad</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Məs. Farid" size="100%"><br><br>
+        <label for="lastname">Soyad</label><br>
+        <input type="lname" id="lastname" name="lname" placeholder="Məs. Nabizade" size="100%"> <br><br>
+        <label for="lastname">Ata adı</label><br>
+        <input type="lname" id="lastname" name="lname" placeholder="Ramin" size="100%"> <br><br>
+        <label for="course">Kurs seçin</label>
+        <select name="course" id="course"   >
+            <option value="Crucosoft">Crucosoft</option>
+            <option value="Code_Academy">Code Academy</option>
+            <option value="Software_village">Software Village</option>
+        </select> <br><br>
+        <div>
+            <fieldset>
+                <legend>Cins</legend>
+        <label for="male">Kişi</label>
+        <input type="radio" id="male" name="gender">
+        <label for="female">Qadın</label>
+        <input type="radio" id="female" name="gender">
+    </fieldset>
+    </div> <br>
+    <label for="phone">Telefon nömrəsi</label><br><br>
+    <input type="tel" id="phone" name="tel" size="100%" value="+994" pattern=".{9.}" title="Yazdığınız nömrə normalara uyğun gəlmir!" placeholder="50-987-65-43" maxlength="13" required> <br> <br>
+    <input type="tel" name="tel" id="tel" size="100%" placeholder="Əlavə nömrə" required> <br><br>
+    <label for="adress">Ünvan</label> <br>
+    <textarea name="adress" id="adress" >Ünvanınızı qeyd edin!</textarea><br><br>
+    <label for="email">Elektron poçt</label><br>
+    <input type="email" name="Email" id="email" size="100%" placeholder="example@gmail.com" value="" required> <br>
+    <label for="password">Şifrə</label><br>
+    <input type="password" id="password" name="password" size="100%" pattern=".{6,}" minlength="6" title="minimum 6 simvol" required><br>
+    <label for="psw-repeat">Təkrar şifrə</label><br>
+    <input type="password" id="psw-repeat" name="psw-repeat" size="100%" pattern=".{6,}" minlength="6" title="minimum 6 simvol" required> <br><br>
+    <button type="submit" class="registerbtn">Register</button>
+
+    </form>
+</body>
+</html>

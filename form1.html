@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    text-align: left;
+    width: 50%;
+}
+::placeholder{
+    font-style: italic;
+}
+div{
+width: 30%;
+}
+</style>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Qeydiyyat</legend>
+            <label for="Username">Adiniz:</label> <br>
+            <input type="uname" id="Username" name="Username" pattern=".{8,}" title="ən azı 8 hərf və ya simvol" size="20" placeholder="Mes: Farid"> <br> <br>
+            <label for="lastname">Soyadiniz:</label><br>
+            <input type="lname" id="lastname" name="lastname" placeholder="Mes: Nabizade"> <br><br>
+            <label for="gender">Cinsiniz:</label> <br><br>
+            <label for="male">Kisi</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Qadin</label>
+            <input type="radio" id="famele" name="gender"> 
+            <label for="other">Diger</label>
+            <input type="radio" id="other" name="gender"> <br><br>
+            <label for="birthday">Dogum tarixi:</label>
+            <input type="date" id="birthday" name="birthday"> <br><br>
+            <div>
+                <label for="Id">FIN kodunuz:</label>
+                <input type="text" id="Id" name="id_code" pattern=".{7.}" title="minimum 7 simvol" maxlength="7">
+            </div> <br>
+            <div>
+                <label for="phone">Mobil nomreniz:</label>
+                <input type="tel" id="phone" name="phone_book" pattern="[+]{1} [0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"  title="Duzgun daxil edin" placeholder="+994501234567" required>
+            </div> <br>
+            <div>
+                <fieldset>
+                    <legend>Yadda saxlayin!</legend>
+                <label for="pwd">Parol:</label>
+            <input type="password" id="pwd" name="pwd" pattern=".{6,}" title="ən azı 6 simvol" size="21"> <br><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" placeholder="adiniz@gmail.com"> <br> <br>
+            </div> <br>
+            <input type="submit">
+        </fieldset>            
+        </fieldset>
+    </form>
+</body>
+</html>

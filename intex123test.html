@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terevezchilik</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+<style>
+body {
+    background-image: url(seedgrow.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+li{
+    display: inline;
+    float: left;
+}
+li :last-child {
+    border-right: none;
+}
+li a{
+    display: block;
+    padding: 8px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active{
+    background-color: #111;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn{
+    background-color: #4caf50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9 ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content{display: block;
+}
+.dropdown:hover .dropbtn{
+    background-color: #3e8e41;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+</style>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">#News</button>
+        <div class="dropdown-content">
+            <a href="#">2013</a>
+            <a href="#">2014</a>
+            <a href="#">2015</a>
+        </div>
+    </div>
+    <ul>
+        <li><a class="active" href="#Home">Ana sehife</a></li>
+        <li><a href="#News">Xeberler</a></li>
+        <li><a href="#Concact us">Elaqe</a></li>
+        <li><a href="#Pictures">Sekiller</a></li>
+        <li style="float:right"><a href="#About">Haqqimizda</a></li>
+    </ul>
+   <h1 style="background-color: green;">Tərəvəzçilik Elmi-Tətqiqat İnstitutu</h1>
+   <h4>KƏND TƏSƏRRÜFATI NAZİRLİYİ</h4>
+   <img src="licensed-image.jpg" alt="red gabbage picture" width="450" height="350"> <br>
+   <p>Brassica oleracea var. capitata f. rubra (Qırmızı kələm) torpaqda ph dərəcəsini göstərə bilən real indiqatordur. Bu kələm növünü bişirdikdə adətən mavi və ya göy rəng alır.
+    Duz və ya turşu ilə reaksiyada rəng dəyişir. </p>
+</body>
+</html>

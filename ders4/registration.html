@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <style>
+    body {
+      border: 2px solid black;
+      border-radius: 8px;
+      width: 50%;
+    }
+    h1 {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    p {
+      font-size: 15px;
+      font-style: italic;
+    }
+    input {
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+    label {
+      font-style: italic;
+    }
+    ::placeholder {
+      font-style: italic;
+    }
+  </style>
+  <body>
+    <form action="/register.php">
+      <div class="container">
+        <h1 style="margin: 20px">Qeydiyyat</h1>
+        <p style="margin: 20px">Şəxsi məlumatlar:</p>
+        <br />
+        <div
+          style="display: flex; gap: 30px; align-items: center; margin: 20px"
+        >
+          <div>
+            <label for="fname">Ad/Soyad:</label><br />
+            <input
+              type="fname"
+              id="fname"
+              name="fname"
+              placeholder="Adınınızı daxil edin"
+            />
+          </div>
+          <div>
+            <label for="bithday">Doğum günü</label> <br />
+            <input type="date" name="date" id="birthday" /><br />
+          </div>
+          <div>
+            <label for="email">Email</label> <br />
+            <input type="email" name="Email" id="email" /> <br />
+          </div>
+        </div>
+        <div
+          style="display: flex; gap: 30px; align-items: center; margin: 20px"
+        >
+          <div>
+            <label for="phone">Telefon nömrəsi:</label><br />
+            <input
+              type="tel"
+              name="tel"
+              id="phone"
+              pattern=".{11.}"
+              placeholder="Nömrənizi daxil edin"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
